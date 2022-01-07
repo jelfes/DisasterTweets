@@ -13,7 +13,9 @@ The data consists of 7613 Tweets which have 5 features each: id, keyword, locati
 In order to train our classifier we will mainly focus on the text of the Tweets, but both keyword and location could both deliver useful further information and will be added in an additional step.
 
 # Cleaning and Tokenization
-To make the text of the Tweets useable for our algorithms we
+To make the text of the Tweets useable for our algorithms we first selected the tweet text column of the input data. Following this, we used a TweetTokenizer from the _ library in order to lowercase all parts of the tweet and strip away any twitter handles. 
+In a next step, the tweets were scanned for unwanted tokens, such as stopwords and punctuation, comparing each token with words from nltk's package english_stopwords and string's 'punctuation'. Furthermore, all '#' signs were stripped from the keywords keeping the tagged words. 
+The last part of preprocessing was to use a TF-IDF Vectorizer in order to have a sparse matrix with each token of the tweet as a separate feature in the models we later test. 
 
 XXX
 
