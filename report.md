@@ -1,3 +1,5 @@
+https://docs.google.com/document/d/1hF7MfkBTu_OjHLlYseknUKi8LkTcQAFLgiQfjuPxw-4/edit?usp=sharing
+
 # Abstract
 
 This project is concerned with the task of analysing Tweets to detect instances that indicate a disaster (e.g. wildfire, car crash, etc.) being reported. To achieve this we applied Machine Learning Methods. In particulare XXX and a Sequential Neural Network. The best result was achieved by XXX leading to a F1-score on the validation set of XXX.
@@ -13,9 +15,9 @@ The data consists of 7613 Tweets which have 5 features each: id, keyword, locati
 In order to train our classifier we will mainly focus on the text of the Tweets, but both keyword and location could both deliver useful further information and will be added in an additional step.
 
 # Cleaning and Tokenization
-To make the text of the Tweets useable for our algorithms we first selected the tweet text column of the input data. Following this, we used a TweetTokenizer from the _ library in order to lowercase all parts of the tweet and strip away any twitter handles. 
-In a next step, the tweets were scanned for unwanted tokens, such as stopwords and punctuation, comparing each token with words from nltk's package english_stopwords and string's 'punctuation'. Furthermore, all '#' signs were stripped from the keywords keeping the tagged words. 
-The last part of preprocessing was to use a TF-IDF Vectorizer in order to have a sparse matrix with each token of the tweet as a separate feature in the models we later test. 
+To make the text of the Tweets useable for our algorithms we first selected the tweet text column of the input data. Following this, we used a TweetTokenizer from the _ library in order to lowercase all parts of the tweet and strip away any twitter handles.
+In a next step, the tweets were scanned for unwanted tokens, such as stopwords and punctuation, comparing each token with words from nltk's package english_stopwords and string's 'punctuation'. Furthermore, all '#' signs were stripped from the keywords keeping the tagged words.
+The last part of preprocessing was to use a TF-IDF Vectorizer in order to have a sparse matrix with each token of the tweet as a separate feature in the models we later test.
 
 XXX
 
